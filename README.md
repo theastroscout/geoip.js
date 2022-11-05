@@ -1,0 +1,97 @@
+# GeoIP
+### Best Free Rest API for IP-based user location detection.
+
+97.5% coverage for IPv4 and IPv6 addresses in our database with daily updates.
+Median data retrieval from the DB is 0.002 seconds.
+
+## Installation
+
+```
+npm install @surfy/geoip
+```
+
+## Usage
+
+```js
+
+import GeoIP from "@surfy/geoip";
+
+const geoIP = new GeoIP({
+	email: "email@example.com",
+	key: "YOUR_FREE_API_KEY" // https://surfy.one/geoip
+});
+
+let testIPs = ["8.8.8.8", "2a01:e35:8bd9:8bb0:92b:8628:5ca5:5f2b"];
+
+let result = [];
+for(let IP of testIPs){
+	result.push(await geoIP.get(IP));
+}
+
+console.log(result);
+
+/*
+
+Result Object [
+  {
+    ip: '8.8.8.8',
+    code: 'US',
+    country: 'United States of America',
+    region: 'California',
+    city: 'Mountain View',
+    latitude: 37.405992,
+    longitude: -122.078515,
+    zip: '94043',
+    timezone: '-07:00',
+    state: true
+  },
+  {
+    ip: '2a01:e35:8bd9:8bb0:92b:8628:5ca5:5f2b',
+    code: 'FR',
+    country: 'France',
+    region: 'Ile-de-France',
+    city: 'Paris',
+    latitude: 48.858365,
+    longitude: 2.294532,
+    zip: '75000',
+    timezone: '+01:00',
+    state: true
+  }
+]
+
+*/
+
+```
+
+## Get Free API Key
+
+```
+https://surfy.one/geoip
+```
+
+<br />
+<br />
+<br />
+<br />
+
+## MIT License
+
+Copyright (c) Alexander Yermolenko • [surfy.one](https://surfy.one)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
