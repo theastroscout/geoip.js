@@ -1,8 +1,10 @@
 # GeoIP
 ### Best Free Rest API for IP-based user location detection.
 
-97.5% coverage for IPv4 and IPv6 addresses in our database with daily updates.
-Median data retrieval from the DB is 0.002 seconds.
+**97.5%** IPv4 and IPv6 address coverage in our database with daily updates. Median data retrieval from the DB is **0.002 seconds**.
+
+
+More info and an absolutely free API Key: https://surfy.one/geoip
 
 ## Installation
 
@@ -18,14 +20,15 @@ import GeoIP from "@surfy/geoip";
 
 const geoIP = new GeoIP({
 	email: "email@example.com",
-	key: "YOUR_FREE_API_KEY" // https://surfy.one/geoip
+	key: "YOUR_FREE_API_KEY" // Get a key > https://surfy.one/geoip
 });
 
 let testIPs = ["8.8.8.8", "2a01:e35:8bd9:8bb0:92b:8628:5ca5:5f2b"];
 
-let result = [];
+let results = [];
 for(let IP of testIPs){
-	result.push(await geoIP.get(IP));
+	let result = await geoIP.get(IP);
+	result.push(result);
 }
 
 console.log(result);
@@ -61,12 +64,6 @@ Result Object [
 
 */
 
-```
-
-## Get Free API Key
-
-```
-https://surfy.one/geoip
 ```
 
 <br />
