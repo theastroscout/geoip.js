@@ -69,7 +69,6 @@ Result Object [
 <br />
 <br />
 <br />
-<br />
 
 ## MIT License
 

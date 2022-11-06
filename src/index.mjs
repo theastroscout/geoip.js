@@ -11,16 +11,17 @@ class GeoIP {
 	constructor(conf){
 		this.email = conf.email;
 		this.key = conf.key;
+		this.headers = {
+			email: this.email,
+			key: this.key
+		};
 	}
 
 	async get(IP){
 		let result = await request({
 			url: `https://api.surfy.one/geoip/${IP}`,
 			method: "POST",
-			headers: {
-				email: this.email,
-				key: this.key
-			}
+			headers: this.headers
 		});
 
 		return result;
