@@ -1,6 +1,6 @@
 {
   "name": "@surfy/geoip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Best Free Rest API for IP-based user location detection",
   "main": "src/index.mjs",
   "scripts": {
