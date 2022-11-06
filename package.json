@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hqdaemon/geoip.git"
+    "url": "git+https://github.com/hqdaemon/geoip.js.git"
   },
   "keywords": [
     "geoip"
@@ -19,9 +19,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hqdaemon/geoip/issues"
+    "url": "https://github.com/hqdaemon/geoip.js/issues"
   },
-  "homepage": "https://github.com/hqdaemon/geoip#readme",
+  "homepage": "https://github.com/hqdaemon/geoip.js#readme",
   "dependencies": {
     "@surfy/request": "^1.0.3"
   }
