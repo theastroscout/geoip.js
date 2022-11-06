@@ -1,4 +1,4 @@
-# GeoIP
+# GEO IP
 ### Best Free Rest API for IP-based user location detection.
 
 **97.5%** IPv4 and IPv6 address coverage in our database with daily updates. Median data retrieval from the DB is **0.002 seconds**.
