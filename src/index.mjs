@@ -19,7 +19,7 @@ class GeoIP {
 
 	async get(IP){
 		let result = await request({
-			url: `https://api.surfy.one/geoip/${IP}`,
+			url: `https://api.surfy.one/geo/ip/${IP}`,
 			method: "POST",
 			headers: this.headers
 		});
