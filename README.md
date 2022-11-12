@@ -36,30 +36,41 @@ console.log(result);
 /*
 
 Result Object [
-  {
-    ip: '8.8.8.8',
-    code: 'US',
-    country: 'United States of America',
-    region: 'California',
-    city: 'Mountain View',
-    latitude: 37.405992,
-    longitude: -122.078515,
-    zip: '94043',
-    timezone: '-07:00',
-    state: true
-  },
-  {
-    ip: '2a01:e35:8bd9:8bb0:92b:8628:5ca5:5f2b',
-    code: 'FR',
-    country: 'France',
-    region: 'Ile-de-France',
-    city: 'Paris',
-    latitude: 48.858365,
-    longitude: 2.294532,
-    zip: '75000',
-    timezone: '+01:00',
-    state: true
-  }
+	{
+		ip: '8.8.8.8',
+		code: 'US',
+		country: 'United States of America',
+		region: 'California',
+		city: 'Mountain View',
+		latitude: 37.405992,
+		longitude: -122.078515,
+		zip: '94043',
+		timezone: {
+			id: "America/Los_Angeles",
+			name: "Pacific Standard Time",
+			gmt: "GMT-08:00","offset":-480,
+			localTime: "11/12/2022, 10:02:08 AM GMT-08:00"
+		},
+		state: true
+	},
+	{
+		ip: '2a01:e35:8bd9:8bb0:92b:8628:5ca5:5f2b',
+		code: 'FR',
+		country: 'France',
+		region: 'Ile-de-France',
+		city: 'Paris',
+		latitude: 48.858365,
+		longitude: 2.294532,
+		zip: '75000',
+		timezone: {
+			id: "Europe/Paris",
+			name: "Central European Standard Time",
+			gmt: "GMT+01:00",
+			offset: 60,
+			localTime: "11/12/2022, 6:55:50 PM GMT+01:00"
+		},
+		state: true
+	}
 ]
 
 */
